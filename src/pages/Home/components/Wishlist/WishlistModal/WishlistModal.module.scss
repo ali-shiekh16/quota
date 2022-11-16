@@ -1,0 +1,453 @@
+
+
+.WishlistModal {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 6px #00000048;
+    border: 1px solid #FFFFFF86;
+    border-radius: 10px;
+    opacity: 1;
+    position: relative;
+    background: #FFFFFF77 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000048;
+    border: 1px solid #FFFFFF86;
+    border-radius: 10px;
+    opacity: 1;
+
+    &__submitcontainer {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        &__blur{
+            background-image: url("../../../../../assets/crytical.png");
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 450px;
+            background-position: center;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            filter: blur(8px);
+            }
+        &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            position: absolute;
+            top: 27px;
+            left: 80%;
+
+            &__text {
+                font: normal normal 600 25px/38px Poppins;
+                letter-spacing: 0px;
+                color: #4B434B;
+
+            }
+
+            &__icon {
+                font-size: 18px;
+                margin-right: -120px;
+                cursor: pointer;
+            }
+        }
+
+        &__submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                text-align: center;
+                font: normal normal 600 37px/59px Poppins !important;
+                letter-spacing: 0px;
+                color: #212024;
+            }
+        }
+    }
+
+    &__container {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+        ////background-image: url("../../../../../assets/crytical.png");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 450px;
+        background-position: center;
+        // filter: blur(8px);
+        //   -webkit-filter: blur(8px);
+        position: relative;
+        &__blur{
+            background-image: url("../../../../../assets/crytical.png");
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            position: absolute;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 450px;
+            background-position: center;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            /* background-color: black; */
+            opacity: 0.1;
+            filter: blur(8px);
+            }
+
+
+        &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &__text {
+                font: normal normal 600 25px/38px Poppins;
+                letter-spacing: 0px;
+                color: #4B434B;
+                
+                &__container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: fit-content;
+                    position: relative;
+                    margin-bottom: 8px;
+            
+                    hr {
+                        height: 7px;
+                        // margin-left: 12px;
+                        position: absolute;
+                        bottom: -10px;
+                        // left: 30px;
+                        /* UI Properties */
+                        background: transparent linear-gradient(272deg, #FF9AE8 0%, #BDFD9A 100%) 0% 0% no-repeat padding-box;
+                        box-shadow: 1px 1px 3px #0000001A;
+                        border-radius: 3px;
+                        opacity: 1;
+                        width: 100%;
+                        border: none;
+                    }
+            }
+            }
+
+            &__icon {
+                font-size: 18px;
+                margin-right: -120px;
+                cursor: pointer;
+            }
+        }
+
+        &__submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                text-align: center;
+                font: normal normal 600 37px/59px Poppins !important;
+                letter-spacing: 0px;
+                color: #212024;
+            }
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            &__input {
+                background: #E8E7E7 0% 0% no-repeat padding-box;
+                border: 1px solid #A0DF86;
+                border-radius: 6px;
+                margin: 10px 0px;
+                height: 55px;
+                text-align: left;
+                font: normal normal normal 16px/30px Poppins;
+                letter-spacing: 0.6px;
+                padding: 15px 33px;
+                color: #212024;
+                &::placeholder {
+                    font-style: italic;
+                    color: #B5B5B5;
+                }
+            }
+
+            &__radiotext {
+                text-align: left;
+                font: normal normal bold 20px/30px Poppins;
+                letter-spacing: 0.6px;
+                color: #212024;
+                margin-bottom: 10px;
+            }
+
+            &__radiogroup {
+                // display: flex;
+                :global .ant-radio-checked .ant-radio-inner{
+                    border-color: 1px solid black;
+                }
+                :global .ant-radio-inner{
+                    border:1px solid black;
+                }
+                :global .ant-radio-wrapper:hover{
+                    border-color: black !important;
+                }
+                :global .ant-radio:hover{
+                    border-color: black !important;
+                }
+                :global .ant-radio-checked::after{
+                    border-color: black;
+                }
+                :global .ant-radio-wrapper:hover .ant-radio-inner{
+                    border: 2px solid black;
+                }
+                :global .ant-radio:hover .ant-radio-inner{
+                    border: 2px solid black;
+                }
+                :global  .ant-radio-input:focus + .ant-radio-inner{
+                    border: 2px solid black;
+                }
+                // :global .ant-radio-checked .ant-radio-inner:focus{
+                //     border-color: red;
+                //   }
+            
+                  :global .ant-radio-checked .ant-radio-inner:after{
+                    background-color: black;
+                  }
+                span {
+                    text-align: left;
+                    font: normal normal 18px/30px Poppins;
+                    letter-spacing: 0.6px;
+                    color: #212024;
+                    font-style: italic;
+                }
+            }
+
+        }
+
+        &__footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__button {
+                background: #A0DF86 0% 0% no-repeat padding-box;
+                border-radius: 10px;
+                font: normal normal 600 20px/30px Poppins;
+                letter-spacing: 0.6px;
+                color: #212024;
+                width: 175px;
+                height: 45px;
+                border: none;
+                border-radius: 11px;
+                color: white;
+&:disabled {
+    color: white;
+    background: #D6D6D6 0% 0% no-repeat padding-box;
+}
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+    .WishlistModal {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 3px 6px #00000048;
+        border: 1px solid #FFFFFF86;
+        border-radius: 10px;
+        opacity: 1;
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        position: relative;
+
+        &__submitcontainer {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            // padding: 42px 0px;
+            ////background-image: url("../../../../../assets/crytical.png");
+            background-repeat: no-repeat, no-repeat;
+            background-size: contain;
+            background-position: center;
+            // filter: blur(8px);
+            //   -webkit-filter: blur(8px);
+
+            &__head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                position: absolute;
+                top: 27px;
+                left: 80%;
+
+                &__text {
+                    font: normal normal 600 12px/18px Poppins;
+                    letter-spacing: 0px;
+                    color: #4B434B;
+                }
+
+                &__icon {
+                    font-size: 18px;
+                    margin-right: -120px;
+                    cursor: pointer;
+                }
+            }
+
+            &__submit {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    text-align: center;
+                    font: normal normal 600 37px/59px Poppins !important;
+                    letter-spacing: 0px;
+                    color: #212024;
+                }
+            }
+        }
+
+        &__container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 15px;
+            // background-image: url("../../../../../assets/crytical.png");
+            background-repeat: no-repeat, no-repeat;
+            background-size: 250px;
+            background-position: center;
+            backdrop-filter: blur(5px); 
+            // filter: blur(8px);
+            //   -webkit-filter: blur(8px);
+            position: relative;
+            &__blur{
+                background-image: url("../../../../../assets/crytical.png");
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                position: absolute;
+                background-repeat: no-repeat, no-repeat;
+                background-size: 450px;
+                background-position: center;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                /* background-color: black; */
+                opacity: 0.1;
+                top: bo;
+                filter: blur(8px);
+                }
+    
+
+
+            &__head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+
+                &__text {
+                    font: normal normal 600 12px Poppins;
+                    letter-spacing: 0px;
+                    color: #4B434B;
+                }
+
+                &__icon {
+                    font-size: 12px;
+                    margin-right: 0px;
+                    cursor: pointer;
+                }
+            }
+
+            &__submit {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    text-align: center;
+                    font: normal normal 600 22px/59px Poppins !important;
+                    letter-spacing: 0px;
+                    color: #212024;
+                }
+            }
+
+            &__body {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                &__input {
+                    background: #E8E7E7 0% 0% no-repeat padding-box;
+                    border: 1px solid #A0DF86;
+                    border-radius: 6px;
+                    margin: 10px 0px;
+                    height: 25px;
+                    text-align: left;
+                    font: italic normal normal 12px Poppins;
+                    letter-spacing: 0.6px;
+                    color: #B5B5B5;
+                }
+
+                &__radiotext {
+                    text-align: left;
+                    font: normal normal bold 12px Poppins;
+                    letter-spacing: 0.6px;
+                    color: #212024;
+                    font-style: italic;
+                    margin-bottom: 10px;
+                }
+
+                &__radiogroup {
+                    span {
+                        text-align: left;
+                        font: normal normal 12px Poppins;
+                        letter-spacing: 0.6px;
+                        color: #212024;
+                        font-style: italic;
+                    }
+                }
+
+            }
+
+            &__footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__button {
+                    background: #A0DF86 0% 0% no-repeat padding-box;
+                    border-radius: 10px;
+                    font: normal normal 600 12px Poppins;
+                    letter-spacing: 0.6px;
+                    color: #212024;
+                    width: 114px;
+                    height: 29px;
+                    border: none;
+                }
+            }
+
+        }
+    }
+
+}

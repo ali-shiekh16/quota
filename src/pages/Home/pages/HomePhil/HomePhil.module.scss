@@ -1,0 +1,124 @@
+.HomePhil {
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    &__top{
+        cursor: pointer;
+        span{
+            font: normal normal 600 20px/30px Poppins;
+letter-spacing: 0px;
+color: #231F20;
+margin-left: 12px;
+        }
+    }
+    &__head{
+        display: flex;
+        margin-left: 580px;
+        margin-top: 35px;
+        margin-right: 50px;
+        span{
+            font: normal normal 600 70px/80px Poppins;
+letter-spacing: 1.4px;
+color: #231F20;
+font-size: 60px;
+// text-shadow: -25px 27px 36px #A0DF86;  
+padding-bottom:5px;
+background: linear-gradient(82deg,#e7e6e690 0%, #A4E981 100% ) right center transparent no-repeat;
+background-size: 95% 14px;
+background-position: left -50px top 55px;
+        }
+    }
+    &__body{
+        display: flex;
+        height: 100%;
+        width: 95%;
+        padding: 0 60px;
+        margin-top: 96px;
+        background: rgba(205, 215, 239, 0.2);
+        border-radius: 10px;
+ backdrop-filter: blur(5px);
+ &__card{
+    opacity: 1;
+    height: 100%;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: normal normal medium 20px/30px Poppins;
+letter-spacing: 0px;
+color: #222222;
+text-align: left;
+span{
+    margin: 20px 0px;
+}
+ul {
+    list-style-image: url('../../../../assets/ul-gov.png')
+}
+ }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .HomePhil {
+        height: 100%;
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        &__top{
+            cursor: pointer;
+            span{
+font: normal normal 600 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #231F20;
+    margin-left: 12px;
+            }
+        }
+        &__head{
+            display: flex;
+            margin-left: 30px;
+            margin-top: 35px;
+            margin-right: 0px;
+            span{
+                font: normal normal 600 23px/25px Poppins;
+                letter-spacing: 1.4px;
+    color: #231F20;
+    // text-shadow: -25px 27px 36px #A0DF86;  
+    padding-bottom:5px;
+                    background: linear-gradient(82deg,#e7e6e690 0%, #A4E981 100% ) right center transparent no-repeat;
+                    background-size: 95% 14px;
+                    background-position: left -15px top 20px;
+            }
+        }
+        &__body{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            padding: 10px;
+            margin-top: 40px;
+            background: rgba(205, 215, 239, 0.2);
+            border-radius: 10px;
+     backdrop-filter: blur(5px);
+     &__card{
+        opacity: 1;
+        backdrop-filter: none;
+        -webkit-backdrop-filter:none;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font: normal normal normal 13px/20px Poppins;
+        letter-spacing: 0px;
+    color: #222222;
+    text-align: left;
+    span{
+        margin: 20px 0px;
+    }
+     }
+        }
+    }
+    
+}

@@ -1,0 +1,108 @@
+.TechStack {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin: 135px 0px;
+    margin-top: 150px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        position: relative;
+
+        span {
+            font: normal normal 600 70px/80px Poppins;
+            letter-spacing: 1.4px;
+            color: #231F20;
+            font-size: 60px ;
+        }
+
+        hr {
+            height: 7px;
+            margin-left: 12px;
+            position: absolute;
+            bottom: -10px;
+            left: 30px;
+            /* UI Properties */
+            background: transparent linear-gradient(272deg, #FF9AE8 0%, #BDFD9A 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 1px 1px 3px #0000001A;
+            border-radius: 3px;
+            opacity: 1;
+            width: 100%;
+            border: none;
+        }
+    }
+
+    &__container {
+        display: flex;
+        margin-top: 35px;
+        align-items: center;
+        background: rgba(205, 215, 239, 0.2);
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        width: 85%;
+        margin-left: auto;
+        padding: 68px 85px;
+    }
+
+    &__img {
+        width: 100%;
+        line-height: 140px;
+
+        img {
+            width: 20%;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .TechStack {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 30px 0px;
+        margin-top: 30px;
+        
+
+        &__text {
+
+            span {
+                font: normal normal 600 18px/21px Poppins;
+                letter-spacing: 1.4px;
+                color: #231F20;
+            }
+        }
+
+        &__container {
+            display: flex;
+            margin-top: 30px;
+            align-items: center;
+            background: rgba(205, 215, 239, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            width: 100%;
+            margin-left: 0px;
+            padding: 0px;
+        }
+
+        &__img {
+            line-height: 70px;
+            img {
+
+                width: 50%;
+                object-fit: contain;
+                height: auto;
+                padding: 6px;
+            }
+
+            // height: 41px;
+        }
+    }
+
+}

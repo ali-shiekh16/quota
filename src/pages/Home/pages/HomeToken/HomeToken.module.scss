@@ -1,0 +1,259 @@
+.HomeToken {
+  height: 100%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    cursor: pointer;
+
+    span {
+      font: normal normal 600 20px/30px Poppins;
+      letter-spacing: 0px;
+      color: #231f20;
+      margin-left: 12px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: 50px;
+
+    span {
+      font: normal normal 600 70px/80px Poppins;
+      letter-spacing: 1.4px;
+      color: #231f20;
+      // text-shadow: -25px 27px 36px #A0DF86;
+      padding-bottom: 5px;
+      font-size: 60px;
+      background: linear-gradient(82deg, #e7e6e690 0%, #a4e981 100%) right
+        center transparent no-repeat;
+      background-size: 95% 14px;
+      background-position: left -50px top 55px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    height: 100%;
+    width: 95%;
+    //padding: 60px;
+    margin-top: 40px;
+    flex-direction: column;
+    li{
+      font-size:20px ;
+    }
+
+    &__card {
+      background: rgba(205, 215, 239, 0.2);
+      opacity: 1;
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      width: 100%;
+      // height: 100%;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font: normal normal medium 20px/30px Poppins;
+      letter-spacing: 0px;
+      color: #222222;
+      text-align: left;
+      margin: 50px 0px;
+
+      &__img {
+        max-width: 100%;
+        height: 70%;
+        margin: 20px 0px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      span {
+        margin: 20px 0px;
+      }
+      li{
+        font-size: 20px;
+      }
+    }
+
+    &__datacard {
+      background: rgba(205, 215, 239, 0.2);
+      opacity: 1;
+      border-radius: 10px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      font: normal normal medium 25px/30px Poppins;
+      letter-spacing: 0.5px;
+      color: #231f20;
+      text-align: left;
+      box-shadow: 0px 3px 6px #00000048;
+      border: 1px solid #ffffff86;
+      ol {
+        list-style-image: url("../../../../assets/ul-token.png");
+        > li {
+          font: normal normal 600 25px/30px Poppins;
+          margin: 20px 0px;
+          font-size: 20px;
+        }
+      }
+      ul {
+        list-style-image: url("../../../../assets/ul-gov.png");
+
+        > li {
+          font: italic normal 300 25px/30px Poppins;
+          margin: 10px 0px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    &__imgcont {
+      margin-top: 80px;
+
+      span {
+        font: normal normal 600 37px/44px Poppins;
+        letter-spacing: 0.74px;
+        color: #231f20;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .HomeToken {
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+      cursor: pointer;
+
+      span {
+        font: normal normal 600 12px/18px Poppins;
+        letter-spacing: 0px;
+        color: #231f20;
+        margin-left: 12px;
+      }
+    }
+
+    &__head {
+      display: flex;
+      margin: auto !important;
+      margin-top: 35px !important;
+      margin-right: 0px !important;
+
+
+      span {
+        font: normal normal 600 23px/25px Poppins;
+        letter-spacing: 1.4px;
+        color: #231f20;
+        // text-shadow: -25px 27px 36px #A0DF86;
+        padding-bottom: 5px;
+        font: size 25px ;
+        background: linear-gradient(82deg, #e7e6e690 0%, #a4e981 100%) right
+          center transparent no-repeat;
+        background-size: 95% 14px;
+        background-position: left -15px top 20px;
+      }
+    }
+
+    &__body {
+      display: flex;
+      height: 100%;
+      width: 95%;
+      padding: 10px;
+      margin-top: 10px;
+
+      &__card {
+        opacity: 1;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font: normal normal normal 16px Poppins;
+        letter-spacing: 0px;
+        margin: 5px 0px;
+        color: #222222;
+        text-align: left;
+
+        &__img {
+          max-width: 100%;
+          height: 70%;
+          margin: 5px 0px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        span {
+          margin: 20px 0px;
+        }
+      }
+
+      &__datacard {
+        background: rgba(205, 215, 239, 0.2);
+        opacity: 1;
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        font: normal normal medium 13px Poppins;
+        letter-spacing: 0.5px;
+        color: #231f20;
+        text-align: left;
+        ol {
+          > li {
+            font: normal normal 600 12px Poppins;
+            margin: 20px 0px;
+          }
+        }
+        ul {
+          > li {
+            font: italic normal 300 12px Poppins;
+            margin: 10px 0px;
+          }
+        }
+      }
+    }
+
+    &__imgcont {
+      margin-top: 30px;
+
+      span {
+        font: normal normal 600 18x Poppins;
+        letter-spacing: 0.74px;
+        color: #231f20;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

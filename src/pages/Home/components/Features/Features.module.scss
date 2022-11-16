@@ -1,0 +1,111 @@
+.Features {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 135px 0px;
+    position: relative;
+
+    &__head {
+        font: normal normal 600 70px/80px Poppins;
+        letter-spacing: 1.4px;
+        color: #231F20;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        span {
+            margin: 0 10px;
+            font-size: 60px;
+            white-space: nowrap;
+        }
+
+        &__line1 {
+            width: 100%;
+            height: 6px;
+            background: transparent linear-gradient(271deg, #FF9AE8 0%, #BDFD9A 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 1px 1px 3px #0000001A;
+            border-radius: 3px;
+            opacity: 1;
+        }
+
+        &__line2 {
+            width: 100%;
+            height: 6px;
+            background: transparent linear-gradient(89deg, #FF9AE8 0%, #BDFD9A 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 1px 1px 3px #0000001A;
+            border-radius: 3px;
+            opacity: 1;
+        }
+    }
+
+    &__subhead {
+        font: normal normal normal 30px/60px Poppins;
+        letter-spacing: 0.6px;
+        font-size: 25px;
+        line-height: 25px;
+        color: #231F20;
+    }
+
+    &__cards {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+
+        >div:nth-child(2n) {
+            margin-bottom: -30px;
+        }
+
+        // :nth-child(2n){
+        //     margin-bottom: -24px !important;
+        // }
+    }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+    .Features {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
+
+        &__head span {
+            font: normal normal 600 18px/21px Poppins !important;
+            letter-spacing: 1.4px;
+            color: #231F20;
+        }
+      
+
+        &__subhead {
+            font: normal normal normal 10px/60px Poppins;
+            letter-spacing: 0.6px;
+            color: #231F20;
+        }
+
+        &__cards {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+
+            >div:nth-child(2n) {
+                margin-bottom: -0px;
+                padding-top: 10px !important
+                ;
+            }
+
+            // div:nth-of-type(2n){
+            //     margin: 0px;
+            // }
+        }
+
+
+    }
+  
+
+
+}

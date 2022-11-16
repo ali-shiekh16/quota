@@ -1,0 +1,111 @@
+.Navbar {
+  height: 83px;
+  // padding: 18px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: normal normal 600 16px/30px Poppins;
+  color: #231F20;
+
+  &__draw {
+
+    :global .ant-drawer-body {
+      -moz-osx-font-smoothing: grayscale;
+      background: rgb(182, 215, 212);
+      background: linear-gradient(90deg, rgba(182, 215, 212, 1) 7%, rgba(231, 212, 192, 1) 75%, rgba(217, 196, 213, 1) 98%);
+    }
+  }
+
+
+  &__launch {
+    background: #A0DF86 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+  }
+
+  &__lang {
+    margin: 0 12px;
+
+    :global .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background: none;
+      border: none;
+      font: normal normal 600 20px/30px Poppins !important;
+      color: #231F20 !important;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    height: 100%;
+    width: 226px;
+    padding-top: 12px;
+  }
+  &__logo img{
+    height: 53px;
+  }
+
+  &__tabs__desktop {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 60px;
+
+    nav a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 30px;
+      transition: background 0.3s ease-in;
+      color: #231F20;
+
+    }
+
+    &__active {
+      padding-bottom:5px;
+
+      background: linear-gradient(82deg, #A4E981 0%, #E7E6E6 100%) right center transparent no-repeat;
+      background-size: 74% 14px;
+      background-position: right 5px top 22px;
+      
+
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__menuButton {
+    float: right;
+    height: 32px;
+    padding: 6px;
+    margin-top: 14px;
+    display: none;
+    background: none;
+    margin-right: 10px;
+  }
+}
+
+
+@media (max-width: 915px) {
+  .Navbar {
+    &__tabs__desktop {
+      display: none;
+    }
+
+    &__logo {
+      width: 121px;
+      height: auto;
+    }
+    &__logo img{
+      height: 36px;
+    }
+    &__menuButton {
+      display: block;
+      margin-right: 10px;
+      margin-top: 0px;
+    }
+  }
+
+}

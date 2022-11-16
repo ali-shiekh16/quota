@@ -1,0 +1,262 @@
+.Governance {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &__head {
+        cursor: pointer;
+
+        span {
+            font: normal normal 600 20px/30px Poppins;
+            letter-spacing: 0px;
+            color: #231F20;
+            margin-left: 12px;
+        }
+    }
+    
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 65px;
+        margin-left: -40px;
+        height: 85vh;
+
+        &__top {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                        margin-bottom: auto;
+
+            &__cry {
+                display: flex;
+                align-items: center;
+
+                &__img {
+                    // width: 251px;
+                    height: 25px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                span {
+                    font: normal normal 600 19px/29px Poppins;
+                    letter-spacing: 0px;
+                    color: #231F20;
+                    margin-left: 12px;
+                }
+            }
+
+            &__count {
+                font: normal normal normal 81px/121px Poppins;
+                font-size: 60px;
+              letter-spacing:12px;
+                color: #231F20;
+            }
+
+        }
+
+        &__mid {
+            span {
+                font: normal normal bold 120px Poppins;
+                letter-spacing: 0px;
+                color: #231F20;
+
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+
+            span {
+                font: normal normal normal 40px/60px Poppins;
+                letter-spacing: 8px;
+                color: #231F20;
+                font-size: 30px;
+                margin-right: 30px;
+                margin-top: 20px;
+
+            }
+
+            h2 {
+                font: normal normal 600 40px/60px Poppins;
+                letter-spacing: 8px;
+                color: #231F20;
+                font-size: 30px;
+                margin-top: 20px;
+
+            }
+        }
+
+        &__counter {
+            display: flex;
+            align-items: center;
+
+            span {
+                width: 16vw;
+                height: 28vh;
+                max-width: 311px;
+                max-height: 311px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0000000d;
+                border-radius: 20px;
+                backdrop-filter: blur(17px);
+                margin-left: 40px;
+                margin-right: 40px;
+                font-size: 70px;
+              
+
+                @media screen and (max-width:1000px) {
+                    max-width: 62px;
+                    max-height: 62px;
+                    border-radius: 10px;
+                    max-height: 63px;
+                    margin: 9px
+                }
+            }
+        }
+
+        &__counterlabel {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                font: normal normal 300 40px/60px Poppins;
+                width: 16vw;
+                max-width: 311px;
+                text-align: center;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-top: 30px;
+                font-size: 25px;
+                text-transform: capitalize;
+                font-weight: 500;
+                margin-top: 0px;
+
+                @media screen and (max-width:1000px) {
+                    max-width: 62px;
+                    margin: 9px;
+                    font-size: 10px!important;
+                    margin-top: 10px
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .Governance {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        &__head {
+            cursor: pointer;
+
+            span {
+                font: normal normal 600 12px/18px Poppins;
+                letter-spacing: 0px;
+                color: #231F20;
+                margin-left: 12px;
+            }
+        }
+
+        &__body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 150px 0px 0px 0px;
+            height: 85vh;
+            margin-left: 0px;
+
+            &__top {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0px 30px;
+                margin-bottom: 20px;
+
+                &__cry {
+                    display: flex;
+                    align-items: center;
+
+                    &__img {
+                       
+                        width: 115px;
+    height: 14px;
+    margin-top: -19px;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    span {
+                        font: normal normal 600 8px/12px Poppins;
+                        letter-spacing: 0px;
+                        color: #231F20;
+                     
+                        margin-left: -11px;
+    margin-top: 5px;
+                    }
+                }
+
+                &__count {
+                    font: normal normal 600 20px/48px Poppins;
+                    letter-spacing: 4px;
+                    color: #231F20;
+                }
+
+            }
+
+            &__mid {
+                span {
+                    font: normal normal bold 22px/33px Poppins;
+                    letter-spacing: 0px;
+                    color: #231F20;
+
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+                span {
+                    font: normal normal normal 13px/20px Poppins;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #231F20;
+    width: 150px;
+    margin-right: 0px;
+                }
+
+                h2 {
+                    font: normal normal 600 13px/20px Poppins;
+                    letter-spacing: 1px;
+                    color: #231F20;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+
+
+}

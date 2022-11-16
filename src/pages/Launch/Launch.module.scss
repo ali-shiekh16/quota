@@ -1,0 +1,178 @@
+.Launch {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &__head{
+        cursor: pointer;
+        span{
+            font: normal normal 600 20px/30px Poppins;
+letter-spacing: 0px;
+color: #231F20;
+margin-left: 12px;
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 105px 105px 0px 105px;
+        &__top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 60px;
+            &__cry{
+                display: flex;
+                align-items: center;
+                &__img{
+                    width: 251px;
+                    height: 25px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+                span{
+                    font: normal normal 600 19px/29px Poppins;
+letter-spacing: 0px;
+color: #231F20;
+margin-left: 12px;
+                }
+            }
+
+        }
+        &__mid{
+            display: flex;
+            // align-items: center;
+            margin-bottom: 80px;
+            &__img{
+                width: 399px;
+height: 479px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &__container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto 0px;
+                margin-left: -330px;
+                background: rgba(205, 215, 239, 0.2);
+                border-radius: 10px;
+         backdrop-filter: blur(5px);
+        height: 70%;
+         width: 80%;
+                span{
+                    font: normal normal bold 111px Poppins;
+                padding: 151px 120px 0px 120px;
+        letter-spacing: 0px;
+        font-size: 80px;
+        color: #231F20;
+        text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .Launch {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        &__head{
+            cursor: pointer;
+            span{
+                font: normal normal 600 12px/18px Poppins;
+    letter-spacing: 0px;
+    color: #231F20;
+    margin-left: 12px;
+            }
+        }
+        &__body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 105px;
+            height: 85vh;
+            &__top{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: auto;
+                &__cry{
+                    display: flex;
+                    align-items: center;
+                    &__img{
+                        width: 251px;
+                        height: 25px;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                    span{
+                        font: normal normal 600 8px/29px Poppins;
+    letter-spacing: 0px;
+    color: #231F20;
+    margin-left: -50px;
+                    }
+                }
+    
+            }
+            &__mid{
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: auto;
+                justify-content: center;
+                &__img{
+                    width: 315px;
+    height: 97px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                        margin-top: -28px;
+                    }
+                }
+                &__container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto 0px;
+                    margin-left: 0px;
+                    background: rgba(205, 215, 239, 0.2);
+                    border-radius: 10px;
+             backdrop-filter: blur(5px);
+            height: 70%;
+             width: 80%;
+            margin-top: -33%;
+
+                    span{
+                        font: normal normal bold 40px Poppins;
+                    padding: 20px;
+            letter-spacing: 0px;
+            color: #231F20;
+            font-size: 25px;
+            text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+  }
+  

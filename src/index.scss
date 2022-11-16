@@ -1,0 +1,21 @@
+* {
+  margin: 0;   /* or   margin-top: 0; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: normal normal normal 20px/30px Poppins;
+  color: #231F20;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(182,215,212);
+  background: linear-gradient(90deg, rgba(182,215,212,1) 7%, rgba(231,212,192,1) 75%, rgba(217,196,213,1) 98%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

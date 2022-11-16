@@ -1,0 +1,171 @@
+.Partners {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    // margin: 150px 0px;
+    &__text {
+        font: normal normal 600 70px/80px Poppins;
+        letter-spacing: 1.4px;
+        color: #231F20;
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        span {
+            margin: 0 10px;
+            white-space: nowrap;
+        }
+
+        &__line1 {
+            width: 100%;
+            height: 6px;
+            background: transparent linear-gradient(271deg, #FF9AE8 0%, #BDFD9A 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 1px 1px 3px #0000001A;
+            border-radius: 3px;
+            opacity: 1;
+        }
+
+        &__line2 {
+            width: 100%;
+            height: 6px;
+            background: transparent linear-gradient(89deg, #FF9AE8 0%, #BDFD9A 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 1px 1px 3px #0000001A;
+            border-radius: 3px;
+            opacity: 1;
+        }
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        // margin: 0px auto;
+        margin: 105px 0px;
+        padding: 0px 90px;
+
+        &__first{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0px auto;
+            width: 100%;
+            flex: 1 1 25%;
+            &__img{
+                // height: 66px;
+                // width: 200px;
+                width: 20%;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        &__second{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 70px;
+            &__img{
+                // height: 66px;
+                // width: 200px;
+                width: 35%;
+                margin-left: 20px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    &__img{
+        // height: 66px;
+        // width: 200px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .Partners {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        margin: 50px 0px;
+        &__text{
+            font: normal normal 600 18px/21px Poppins;
+            letter-spacing: 1.4px;
+            color: #231F20;
+            text-align: center;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            // margin: 0px auto;
+            margin: 10px 0px;
+            padding: 0px 0px;
+            &__first{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin: 0px auto;
+                width: 100%;
+                // flex: 1 1 25%;
+                &__img{
+                    // height: 66px;
+                    // width: 200px;
+                    width: 40%;
+                    margin-top: 32px;
+    
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            &__second{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 32px;
+                &__img{
+                    // height: 66px;
+                    // width: 200px;
+                    width: 40%;
+                    margin-left: 0px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+        &__img{
+height: 31px;
+margin-top: 10px;
+width: 50%;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    
+    
+  }

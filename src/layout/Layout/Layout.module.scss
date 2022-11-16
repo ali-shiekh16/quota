@@ -1,0 +1,148 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  // overflow-x: hidden;
+  &__bubbles {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+
+    &__1,
+    &__2,
+    &__3,
+    &__4,
+    &__5,
+    &__6,
+    &__7 {
+      position: absolute;
+    }
+
+    &__1 {
+      top: -220.103577px;
+      left: 286px;
+      width: 30%;
+    }
+
+    &__2 {
+      top: 1216px;
+      left: 1688px;
+    }
+    &__3 {
+      top: 1520px;
+      left: -312.541015625px;
+    }
+
+    &__4 {
+      top: 2060px;
+      left: 1110px;
+      width: 843px;
+    }
+
+    &__5 {
+      top: 155px;
+      left: 890px;
+      width: 35%;
+    }
+
+    &__6 {
+      top: 91px;
+      left: 0px;
+      width: 34%;
+    }
+  }
+
+  &__bod {
+    z-index: 1;
+    padding: 25px 0px 0px 60px !important;
+    margin-bottom: 20px;
+    max-width: 1740px;
+    margin: 0 auto;
+
+    &__mob {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1770px) {
+  .Layout {
+    &__bod {
+      padding: 60px;
+      padding-top: 25px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Layout {
+    &__bod {
+      padding: 0 30px 30px 30px !important;
+      margin-bottom: 20px;
+      width: 100%;
+      max-width: 100%;
+
+      &__mob {
+        display: block;
+      }
+    }
+    &__bubbles {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+
+      &__1,
+      &__2,
+      &__3,
+      &__4,
+      &__5,
+      &__6,
+      &__7 {
+        position: absolute;
+      }
+
+      &__1 {
+        top: -220.103577px;
+        left: 286px;
+        width: 30%;
+      }
+
+      &__2 {
+        top: 1216px;
+        left: 1688px;
+      }
+      &__3 {
+        top: 1520px;
+        left: -312.541015625px;
+      }
+
+      &__4 {
+        top: 2060px;
+        left: 1110px;
+        width: 843px;
+      }
+
+      &__5 {
+        top: 155px;
+        left: 890px;
+        width: 35%;
+      }
+
+      &__6 {
+        top: 69px;
+        left: 0px;
+        width: 34%;
+      }
+    }
+  }
+}
